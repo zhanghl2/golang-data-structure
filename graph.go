@@ -72,3 +72,16 @@ func (g *Graph) Print() {
 	}
 	fmt.Println()
 }
+func main() {
+	test := &Graph{}
+	for i := 0; i < 5; i++ {
+		test.AddVertex(i)
+	}
+	test.AddEdge(1, 2)
+	test.AddEdge(1, 2)
+	test.AddEdge(6, 2)
+	test.AddEdge(3, 2)
+
+	test.Print()
+
+}
