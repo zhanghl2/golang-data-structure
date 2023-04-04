@@ -25,7 +25,7 @@ func (h *MaxHeap) Extract() int {
 	//take out the last index and put it in the root
 	h.array[0] = h.array[l]
 	h.array = h.array[:l]
-	h.maxHeapifyUp(0)
+	h.maxHeapifydown(0)
 	return extracted
 }
 
